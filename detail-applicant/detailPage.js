@@ -75,4 +75,13 @@ const currentIndexReturn = () => {
     }
 }
 
+const height = document.querySelector(".item-text")
+console.log("뜨나요",height.clientHeight)
+
+if(height.clientHeight < 25) {
+    height.style.textAlign = 'center'
+} else {
+    height.style.textAlign = 'start'
+}
+
 currentIndexReturn()
